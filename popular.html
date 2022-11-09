@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+        <title>K-FAIR</title>
+        <style>
+            
+            body {
+                width: 1920px;
+                background-color:  rgb(254, 249, 239);
+
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                margin: 20px;
+                font-size: 40px;
+            }
+            h2 {
+                color:rgb(128, 50, 50);
+                margin: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+            }
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                margin: 20px;
+            }
+            h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                margin: 20px;
+            }
+            h5 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 25px;
+                margin: 20px;
+            }
+            p {
+                font-family: 'Montserrat', sans-serif;
+                margin: 20px;
+                font-size: 20px;
+            }
+
+            #p1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8px;    
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                border-radius: 20px;
+            }
+
+            ul li {
+                display: inline;
+                float: left;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+            }
+            .table {
+                display: table;
+                margin: 0 auto;
+            }
+
+            .vl {
+                border-right: 10px solid rgb(64, 64, 64);
+                border-radius: 20px;
+                height: 740px;
+                float: right;
+            }
+
+            ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                padding-left: 96px;
+                padding-right: 96px;
+                text-decoration: none;
+                transition-duration: .4s;
+            }
+
+            h1 a {
+            color:rgb(28, 22, 38);
+            transition-duration: .4s;
+            }
+
+            h3 a {
+                color:#39081d;
+                transition-duration: .4s;
+            }
+            h5 a{
+                color:rgb(128, 50, 50);
+                transition-duration: .4s;
+            }
+
+            h1 a:hover {
+                color: rgb(223, 100, 100);
+            }
+            
+            h3 a:hover {
+                color:#91297c;
+            }
+            h5 a:hover{
+                color:#91297c; 
+            }
+
+            ul li a:hover {
+                background-color: rgb(223, 100, 100);
+            }
+
+            .zoom {
+                padding-left:15px;
+                height: auto;
+            }
+
+            .zoom img {
+            transition: transform .5s ease;
+            }
+
+            .zoom:hover img {
+            transform: scale(1.1);
+            }
+
+            #header {
+                background-color: #9cadce;
+                height: 200px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 20px;
+                box-shadow: 2px 2px 5px 1px rgba(75, 47, 47, 0.8);
+                width: 1910px;
+            }
+            #pagetitle {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 32pt;
+                color: rgb(64, 64, 64);
+                text-align: center;
+                padding: 60px;
+            }
+            
+            #main {
+                height: 14600px;
+                width: 1728px;
+                margin: 0 auto;
+                padding-top: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #nav {
+                text-align:center;
+                padding: 10px;
+            }
+
+            #information {
+                width: 78%;
+                height: 98%;
+                float: right;
+                background-color: rgb(236, 164, 164);
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+            }
+
+            #navigation {
+                float: left;
+                width: 20%;
+                height: 3.7%;
+                background-color: #b54949;
+                border-radius: 20px;
+            }
+
+            #arrow {
+                float: right;
+                width: 80px;
+                border-radius: 20px;
+                position: fixed;
+            }
+
+            .dark {
+                color:#145222;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="http://i.imgur.com/B5YgXbH.gif" alt="heart dance" 
+   style="float:right; padding-top: 70px; width: 130px; height: 130px;"> 
+         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e4a8b98a-5148-4238-80c6-91a0c883ce9d/d9g5kll-e14f2718-3aa0-4774-9ec0-a5060768d488.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U0YThiOThhLTUxNDgtNDIzOC04MGM2LTkxYTBjODgzY2U5ZFwvZDlnNWtsbC1lMTRmMjcxOC0zYWEwLTQ3NzQtOWVjMC1hNTA2MDc2OGQ0ODguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RXThpP5Miv28Epw6yI7rb1QUIlXNx0bngQRtvRZsWxw" alt="pink sparkly planet with heart revolving" 
+   style="float:left; padding: 1px; width: 130px; height: 130px;"> 
+        <div id="header">
+            <p id="pagetitle"><strong>WELCOME TO K-FAIR</strong><br><small>(케이페어에 오신 것을 환영합니다!)</small></p>
+        </div>
+        <div id="nav">
+            <div class="table">
+            <ul>
+                <li><a href="index.html">HOMEPAGE</a></li>
+                <li><a href="proscons.html">PROS & CONS</a></li>
+                <li><a href="popular.html">WELL-KNOWN GROUPS</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="list.html">LIST</a></li>
+                <li><a href="author.html">AUTHOR</a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="arrow">
+            <a href="#pagetitle"><img src="https://media0.giphy.com/media/efaglgd7HZ3eYUCYCH/giphy.gif?cid=6c09b9523c64de31d722acb25d9937e794a3dd90818daff6&rid=giphy.gif&ct=s" alt="up arrow"
+                style="height: 80px;"></a>
+                <p id="p1">click to return to the top!</p>
+        </div>
+        <div id="main">
+            <div id="navigation">
+                <img src="https://thumbs.gfycat.com/BitesizedDapperAmericanratsnake-size_restricted.gif" alt="pixel moon"
+                style="float:right; height:85px; padding-top:20px;">
+                <h1>NAVIGATION</h1>
+                <h4>(Table of Contents)</h4>
+                <h3><a href="#1stgen">1st Generation</a></h3>
+                <h3><a href="#2ndgen">2nd Generation</a></h3>
+                <h3><a href="#3rdgen">3rd Generation</a></h3>
+                <h3><a href="#4thgen">4th Generation</a></h3>
+                <h3><a href="#extra">Extra Groups</a></h3>
+                <h3><a href="#credits">Credits</a></h3>
+                <img src="https://25.media.tumblr.com/6144f681678ce0299ba24c8d63d2d4f1/tumblr_mmb205xAnw1ryat6io4_500.gif" alt="pink clouds"
+                style="height:180px; width:340px; padding-left: 7px; padding-top:7px; border-radius:20px; object-fit:cover; object-position:0px -5px;">
+            </div>
+            <div id="information">
+                <h1>WELL-KNOWN GROUPS</h1>
+                <h2>Popular groups from each generation along with their biggest hits!</h2>
+                <p>Get to know some of the most popular Kpop groups in each generations, the ones who served as a rolemodel for the next generations to come. The ones who set the standards, who made the "perfect recipe" to Kpop stardom, the ones who are considered to be the "OGs."</p>
+                <h1 id="1stgen">1st Generation</h1>
+                <h5>H.O.T. (aka Highfive Of Teenagers)</h5>
+                <img src="https://thebiaslistcom.files.wordpress.com/2020/09/h.o.t-hope.jpg" alt="H.O.T."
+                style="height:500px; padding-left: 15px;">
+                <p><span class="dark">Korean Name:</span> 에이치오티 <br>
+                <span class="dark">Company:</span> SM Entertainment <br>
+                <span class="dark">Debut Date:</span> September 7, 1996 <br>
+                <span class="dark">Disbandment Date:</span> May, 2001 <br>
+                <span class="dark">Members:</span> Heejun, Woohyuk, Tony, Kangta, Jaewon</p>
+                <p>Their most popular song, "Candy," was apart of their debut album. It was described as a cheerful and bubblegum pop dance track, and upon its release, it was recognized nationwide in South Korea. It was even voted as the most popular song of 1996 in South Korea in a survey conducted in 2005 by MTV Korea. The group even won the "Best New Artist" award during the 11th Golden Disc Awards because of Candy.
+                </p>
+                <h5><a href="https://www.youtube.com/watch?v=fCO7f0SmrDc">H.O.T - Candy, HOT - 캔디, MBC Top Music 19961207</a></h5>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=XQwsh9Ob2e0">
+                <img src="https://i.ytimg.com/vi/XQwsh9Ob2e0/maxresdefault.jpg" alt="Candy Thumbnail"
+                style="height: 500px; "></a>
+                </div>
+                <h5>S.E.S. (aka Sea, Eugene, Shoo)</h5>
+                <img src="https://kprofiles.com/wp-content/uploads/2018/01/s.e.s-feature-900x631.png" alt="S.E.S."
+                style="height:500px; padding-left: 15px;">
+                <p><span class="dark">Korean Name:</span> 에스이에스 <br>
+                <span class="dark">Company:</span> SM Entertainment <br>
+                <span class="dark">Debut Date:</span> November 1, 1997 <br>
+                <span class="dark">Disbandment Date:</span> December, 2002 <br>
+                <span class="dark">Members:</span>  Bada (Sea), Eugene, Shoo</p>
+                <p>One of their most popular songs was considered to be "('Cause) I'm Your Girl," which was a sing;e. It appeared on SM Entertainment's compilation album, SM Best Album 2. It lead to a release of another single called "Oh, My Love," which gained the number 2 spot on Inkigayo.
+                </p>
+                <h5><a href="https://www.youtube.com/watch?v=WpmTLDtr4qY">S.E.S - Im Your Girl MV [HD Enhanced]</a></h5>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=WpmTLDtr4qY">
+                    <img src="https://i.ytimg.com/vi/WpmTLDtr4qY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBwZVtj-gF-_7yIKYGbhqR3pX977A" alt="I'm Your Girl Thumbnail"
+                    style="height: 500px;"></a>
+                </div>
+                <h1 id="2ndgen">2nd Generation</h1>
+                <h5>TVXQ</h5>
+                <img src="https://www.allkpop.com/upload/2021/11/content/260233/1637912004-dbsk43.jpg" alt="TVXQ"
+                style="height:500px; padding-left: 15px;">
+                <p><span class="dark">Korean Name:</span> 동방신기 <br>
+                <span class="dark">Company:</span> SM Entertainment <br>
+                <span class="dark">Debut Date:</span> December 26, 2003 <br>
+                <span class="dark">Disbandment Date:</span> N/A <br>
+                <span class="dark">Members:</span>  U-Know Yunho, Max Changmin, Hero Jaejoong, Micky Yoochun, Xiah Junsu (Now only Yunho & Changmin)</p>
+                <p>The song was released on September 26, 2008, in their fourth studio album. Mirotic seems to be the (now duo)'s most popular song as it has been performed so many times and was covered by so many idols. Music critics truly loved the songs and was dubbed one of the best boy band songs of all time by Billboard and Rolling Stone.
+                </p>
+                <h5><a href="https://www.youtube.com/watch?v=HtJS32n6LNQ">TVXQ! 동방신기 '주문 - MIROTIC' MV</a></h5>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=HtJS32n6LNQ">
+                    <img src="https://external-preview.redd.it/PPiaCYdT7cCC-9OIPnoeGY81egEJISER5fBJISdvccU.jpg?auto=webp&s=a417abb846d5ae57230675f6576f74349aa90505" alt="Mirotic Thumbnail"
+                    style="height: 500px;"></a>
+                </div>
+                <h5>Girls' Generation (SNSD)</h5>
+                <img src="https://sites.google.com/site/manilynsone/_/rsrc/1394000289496/home/girls-genaration-facts/ace-bed-wallpaper-1.jpg" alt="SNSD"
+                style="height:500px; padding-left: 15px;">
+                <p><span class="dark">Korean Name:</span> 소녀시대 <br>
+                <span class="dark">Company:</span> SM Entertainment <br>
+                <span class="dark">Debut Date:</span> August 5, 2007 <br>
+                <span class="dark">Disbandment Date:</span> N/A <br>
+                <span class="dark">Members:</span>  Taeyeon, YoonA, Tiffany, Sunny, Hyoyeon, Sooyoung, Seohyun, Yuri, Jessica (Jessica has left)</p>
+                <p>"I Got a Boy" is considered to be the group's best song, according to many music critics. It has a unique rhythm and concept which made it popular both in South Korea and internationally. After opening with singsong raps then jumping from bubblegum to drum & bass in a such a quick moment, the tempo-shifting banger is a force of nature.
+                </p>
+                <h5><a href="https://www.youtube.com/watch?v=wq7ftOZBy0E">Girls' Generation 소녀시대 'I GOT A BOY' MV</a></h5>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=wq7ftOZBy0E">
+                    <img src="https://i.pinimg.com/originals/a1/90/95/a19095d90c860c3a8ce718e115c8f6b2.jpg" alt="I Got a Boy Thumbnail"
+                    style="height: 500px;"></a>
+                </div>
+                <h1 id="3rdgen">3rd Generation</h1>
+                <h5>BTS (Bangtan Boys)</h5>
+                <img src="https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/canvas/2021/07/08/62d30fc0-81a2-4093-b5aa-182a94855233_386389bf.jpg?itok=394kwgGN&v=1625719813" alt="BTS"
+                style="height:500px; padding-left: 15px;">
+                <p><span class="dark">Korean Name:</span> 방탄소년단 <br>
+                <span class="dark">Company:</span> Big Hit Music (Apart of Hybe) <br>
+                <span class="dark">Debut Date:</span> June 13, 2013 <br>
+                <span class="dark">Disbandment Date:</span> N/A <br>
+                <span class="dark">Members:</span> RM, Jin, Suga, J-Hope, Jimin, V, Jungkook.</p>
+                <p>"Dynamite" was their first full-English single and is now the most-streamed BTS song ever. It's an upbeat pop song that contains elements of funk, soul, and bubblegum pop. The song was released during the pandeimc and was intended to give hope and joy to those suffering due to Covid-19, it was meant to give them the mindset to appreciate the little things and realize how valuable life is.
+                </p>
+                <h5><a href="https://www.youtube.com/watch?v=gdZLi9oWNZg">BTS (방탄소년단) 'Dynamite' Official MV</a></h5>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg">
+                    <img src="https://i.ytimg.com/vi/gdZLi9oWNZg/maxresdefault.jpg" alt="Dynamite Thumbnail"
+                    style="height: 500px;"></a>
+                </div>
+                <h5>Twice</h5>
+                <img src="https://www.iwmbuzz.com/wp-content/uploads/2020/10/how-twice-became-so-successful-details-revealed.jpg" alt="Twice"
+                style="height:500px; padding-left: 15px;">
+                <p><span class="dark">Korean Name:</span> 트와이스 <br>
+                <span class="dark">Company:</span> JYP Entertainment <br>
+                <span class="dark">Debut Date:</span> October 20, 2015 <br>
+                <span class="dark">Disbandment Date:</span> N/A <br>
+                <span class="dark">Members:</span> Jihyo, Nayeon, Jeongyeon, Momo, Sana, Mina, Dahyun, Chaeyoung, Tzuyu</p>
+                <p>"Cheer Up" is a song that combines multiple music genres which adds up to the genre, "Color Pop." The song is about expressing your frustration on a love interest, which was a relatable topic for many teens during that time and even now. The song topped the Gaon Digital Chart and is the best-performing single of 2016 in South Korea. It also won several awards including Song of the Year in two major music awards shows, Melon Music Awards and Mnet Asian Music Awards.
+                </p>
+                <h5><a href="https://www.youtube.com/watch?v=c7rCyll5AeY">TWICE "CHEER UP" M/V</a></h5>
+                <div class="zoom">
+                <a href="https://s2.dmcdn.net/v/KQoZJ1SVebXhTxuFe/x720">
+                    <img src="https://i.ytimg.com/vi/c7rCyll5AeY/sddefault.jpg" alt="Cheer Up Thumbnail"
+                    style="height: 500px;"></a>
+                </div>
+                <h1 id="4thgen">4th Generation</h1>
+                <h5>Stray Kids</h5>
+                <img src="https://assets.teenvogue.com/photos/612f8bf4e8c260b3d41cc82c/master/pass/Stray%20Kids%20(1).jpg" alt="Stray Kids"
+                style="height:500px; padding-left: 15px;">
+                <p><span class="dark">Korean Name:</span> 스트레이 키즈 <br>
+                <span class="dark">Company:</span> JYP Entertainment <br>
+                <span class="dark">Debut Date:</span> March 25, 2018 <br>
+                <span class="dark">Disbandment Date:</span> N/A <br>
+                <span class="dark">Members:</span> Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin, I.N</p>
+                <p>"God's Menu" was the main track of their first ever studio album, and was a hit that got them recognized internationally. Arguably one of Stray Kids' most popular tracks, “God's Menu” shockingly never got a music show win during their promotional period. With its unique concept and standout choreography, it's definitely surprising to hear that this track didn't snag a trophy.
+                </p>
+                <h5><a href="https://www.youtube.com/watch?v=TQTlCHxyuu8">Stray Kids "神메뉴(God's Menu)" M/V</a></h5>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=TQTlCHxyuu8">
+                    <img src="https://img.youtube.com/vi/TQTlCHxyuu8/0.jpg" alt="God's Menu Thumbnail"
+                    style="height: 500px;"></a>
+                </div>
+                <h5>Itzy</h5>
+                <img src="https://i0.wp.com/colorcodedlyrics.com/wp-content/uploads/2019/02/ITZY-IT%E2%80%99z-Different.jpg?fit=600%2C600&ssl=1" alt="Itzy"
+                style="height:500px; padding-left: 15px;">
+                <p><span class="dark">Korean Name:</span> 있지 <br>
+                <span class="dark">Company:</span> JYP Entertainment <br>
+                <span class="dark">Debut Date:</span> February 11, 2019 <br>
+                <span class="dark">Disbandment Date:</span> N/A <br>
+                <span class="dark">Members:</span> Yeji, Lia, Ryujin, Chaeryeong, Yuna</p>
+                <p>"Dalla Dalla," which was Itzy's debut song, was an instant hit and scored one of the biggest Billboard debuts for a new K-pop act in years, it even peaked at number two on the World Digital Song Sales chart. The song brought instant success to the group, the music video being able to hit 100 million views in less than two months, which was already amazing for a rookie group.
+                </p>
+                <h5><a href="https://www.youtube.com/watch?v=pNfTK39k55U">ITZY "달라달라(DALLA DALLA)" M/V</a></h5>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=pNfTK39k55U">
+                    <img src="https://i.pinimg.com/564x/7a/45/3a/7a453ab68ab1c64b2e18c724c4b60b39.jpg" alt="Dalla Thumbnail"
+                    style="height: 500px;"></a>
+                </div>
+                <h1 id="extra">Extra Groups</h1>
+                <p>Here are some underrated or newly-debuted groups that deserve love and recognition as well! We shouldn't just shed light to the already-popular-groups but also to the groups who are up and coming, who will be the next to lead the generation of Kpop! Or just the ones who have made amazing hits but don't get the appreciation that they deserve.</p>
+                <h5>New Jeans</h5>
+                <img src="https://www.allkpop.com/upload/2022/08/content/081004/web_data/allkpop_1659967618_1658707286-30000778486-1280.jpg" alt="New Jeans"
+                style="height:500px; padding-left: 15px;">
+                <h5>Xdinary Heroes</h5>
+                <img src="https://www.allkpop.com/upload/2022/10/content/181115/1666106116-untitled-1.jpg" alt="Xdinary Heroes"
+                style="height:500px; padding-left: 15px;">
+                <h5>Weki Meki</h5>
+                <img src="https://pbs.twimg.com/media/FD0x_xIaIAARBgR?format=jpg&name=large" alt="Weki Meki"
+                style="height:500px; padding-left: 15px;">
+                <h5>Golden Child</h5>
+                <img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2021/entertainment/08/28/20210828-group-shot.jpg" alt="Golden Child"
+                style="height:500px; padding-left: 15px;">
+                <h1 id="credits">Credits</h1>
+                <P>Credit to this website for serving as a guide on all groups' information and whatnot. <br><a href="https://kprofiles.com/">kprofiles.com</a></P>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+        <title>K-FAIR</title>
+        <style>
+            
+            body {
+                width: 1920px;
+                background-color:  rgb(254, 249, 239);
+
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                margin: 20px;
+                font-size: 40px;
+            }
+            h2 {
+                color:rgb(128, 50, 50);
+                margin: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+            }
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                margin: 20px;
+            }
+            h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                margin: 20px;
+            }
+            h5 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 25px;
+                margin: 20px;
+            }
+            p {
+                font-family: 'Montserrat', sans-serif;
+                margin: 20px;
+                font-size: 20px;
+            }
+
+            #p1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8px;    
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                border-radius: 20px;
+            }
+
+            ul li {
+                display: inline;
+                float: left;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+            }
+            .table {
+                display: table;
+                margin: 0 auto;
+            }
+
+            .vl {
+                border-right: 10px solid rgb(64, 64, 64);
+                border-radius: 20px;
+                height: 740px;
+                float: right;
+            }
+
+            ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                padding-left: 96px;
+                padding-right: 96px;
+                text-decoration: none;
+                transition-duration: .4s;
+            }
+
+            h1 a {
+            color:rgb(28, 22, 38);
+            transition-duration: .4s;
+            }
+
+            h3 a {
+                color:#39081d;
+                transition-duration: .4s;
+            }
+            h5 a{
+                color:rgb(128, 50, 50);
+                transition-duration: .4s;
+            }
+
+            h1 a:hover {
+                color: rgb(223, 100, 100);
+            }
+            
+            h3 a:hover {
+                color:#91297c;
+            }
+            h5 a:hover{
+                color:#91297c; 
+            }
+
+            ul li a:hover {
+                background-color: rgb(223, 100, 100);
+            }
+
+            .zoom {
+                padding-left:15px;
+                height: auto;
+            }
+
+            .zoom img {
+            transition: transform .5s ease;
+            }
+
+            .zoom:hover img {
+            transform: scale(1.1);
+            }
+
+            #header {
+                background-color: #9cadce;
+                height: 200px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 20px;
+                box-shadow: 2px 2px 5px 1px rgba(75, 47, 47, 0.8);
+                width: 1910px;
+            }
+            #pagetitle {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 32pt;
+                color: rgb(64, 64, 64);
+                text-align: center;
+                padding: 60px;
+            }
+            
+            #main {
+                height: 200px;
+                width: 1728px;
+                margin: 0 auto;
+                padding-top: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #nav {
+                text-align:center;
+                padding: 10px;
+            }
+
+            #information1 {
+                width: 98%;
+                height: 98%;
+                float: left;
+                background-color: rgb(233, 194, 155);
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+            }
+
+            #navigation {
+                float: left;
+                width: 20%;
+                height: 3.7%;
+                background-color: #b54949;
+                border-radius: 20px;
+            }
+
+            #arrow {
+                float: right;
+                width: 80px;
+                border-radius: 20px;
+                position: fixed;
+            }
+
+            .dark {
+                color:#145222;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="http://i.imgur.com/B5YgXbH.gif" alt="heart dance" 
+   style="float:right; padding-top: 70px; width: 130px; height: 130px;"> 
+         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e4a8b98a-5148-4238-80c6-91a0c883ce9d/d9g5kll-e14f2718-3aa0-4774-9ec0-a5060768d488.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U0YThiOThhLTUxNDgtNDIzOC04MGM2LTkxYTBjODgzY2U5ZFwvZDlnNWtsbC1lMTRmMjcxOC0zYWEwLTQ3NzQtOWVjMC1hNTA2MDc2OGQ0ODguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RXThpP5Miv28Epw6yI7rb1QUIlXNx0bngQRtvRZsWxw" alt="pink sparkly planet with heart revolving" 
+   style="float:left; padding: 1px; width: 130px; height: 130px;"> 
+        <div id="header">
+            <p id="pagetitle"><strong>WELCOME TO K-FAIR</strong><br><small>(케이페어에 오신 것을 환영합니다!)</small></p>
+        </div>
+        <div id="nav">
+            <div class="table">
+            <ul>
+                <li><a href="index.html">HOMEPAGE</a></li>
+                <li><a href="proscons.html">PROS & CONS</a></li>
+                <li><a href="popular.html">WELL-KNOWN GROUPS</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="list.html">LIST</a></li>
+                <li><a href="author.html">AUTHOR</a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="arrow">
+            <a href="#pagetitle"><img src="https://media0.giphy.com/media/efaglgd7HZ3eYUCYCH/giphy.gif?cid=6c09b9523c64de31d722acb25d9937e794a3dd90818daff6&rid=giphy.gif&ct=s" alt="up arrow"
+                style="height: 80px;"></a>
+                <p id="p1">click to return to the top!</p>
+        </div>
+        <div id="main">
+            <div id="information1">
+            <h1>EVERY SINGLE KPOP IDOL TO EXIST</h1>
+            <p>Here are every single soloist, group, or just any idol to exist! Click here to see the full list. <br>
+            <a href="https://www.hallyuidol.com/profile-summary">Hallyu Idol's Complete Profile Summary</a></p>
+            </P>
+        </div>
+    </body>
+</html>

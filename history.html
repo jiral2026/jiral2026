@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+        <title>K-FAIR</title>
+        <style>
+            
+            body {
+                width: 1920px;
+                background-color:  rgb(254, 249, 239);
+
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                margin: 20px;
+                font-size: 40px;
+            }
+            h2 {
+                color:rgb(128, 50, 50);
+                margin: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+            }
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                margin: 20px;
+            }
+            h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                margin: 20px;
+            }
+            p {
+                font-family: 'Montserrat', sans-serif;
+                margin: 20px;
+                font-size: 20px;
+            }
+
+            #p1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8px;    
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                border-radius: 20px;
+            }
+
+            ul li {
+                display: inline;
+                float: left;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+            }
+            .table {
+                display: table;
+                margin: 0 auto;
+            }
+
+            .vl {
+                border-right: 10px solid rgb(64, 64, 64);
+                border-radius: 20px;
+                height: 740px;
+                float: right;
+            }
+
+            ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                padding-left: 96px;
+                padding-right: 96px;
+                text-decoration: none;
+                transition-duration: .4s;
+            }
+
+
+            h1 a {
+            color:rgb(28, 22, 38);
+            transition-duration: .4s;
+            }
+
+            h3 a {
+                color:#1b4d55;
+                transition-duration: .4s;
+            }
+
+            h1 a:hover {
+                color: rgb(223, 100, 100);
+            }
+            
+            h3 a:hover {
+                color:#50929c;
+            }
+
+            ul li a:hover {
+                background-color: rgb(223, 100, 100);
+            }
+
+            .zoom {
+                height: 0;
+            }
+
+            .zoom img {
+            transition: transform .5s ease;
+            }
+
+            .zoom:hover img {
+            transform: scale(1.2);
+            }
+
+            #header {
+                background-color: #9cadce;
+                height: 200px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 20px;
+                box-shadow: 2px 2px 5px 1px rgba(75, 47, 47, 0.8);
+                width: 1910px;
+            }
+            #pagetitle {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 32pt;
+                color: rgb(64, 64, 64);
+                text-align: center;
+                padding: 60px;
+            }
+            
+            #main {
+                height: auto;
+                width: 1728px;
+                margin: 0 auto;
+                padding-top: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #nav {
+                text-align:center;
+                padding: 10px;
+            }
+
+            #information {
+                width: 78%;
+                height: 98%;
+                float: right;
+                background-color: rgb(186, 232, 200);
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+            }
+
+            #timeline {
+                float: left;
+                width: 20%;
+                height: 11.5%;
+                background-color: #7ec4cf;
+                border-radius: 20px;
+            }
+
+            #arrow {
+                float: right;
+                width: 80px;
+                border-radius: 20px;
+                position: fixed;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="http://i.imgur.com/B5YgXbH.gif" alt="heart dance" 
+   style="float:right; padding-top: 70px; width: 130px; height: 130px;"> 
+         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e4a8b98a-5148-4238-80c6-91a0c883ce9d/d9g5kll-e14f2718-3aa0-4774-9ec0-a5060768d488.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U0YThiOThhLTUxNDgtNDIzOC04MGM2LTkxYTBjODgzY2U5ZFwvZDlnNWtsbC1lMTRmMjcxOC0zYWEwLTQ3NzQtOWVjMC1hNTA2MDc2OGQ0ODguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RXThpP5Miv28Epw6yI7rb1QUIlXNx0bngQRtvRZsWxw" alt="pink sparkly planet with heart revolving" 
+   style="float:left; padding: 1px; width: 130px; height: 130px;"> 
+        <div id="header">
+            <p id="pagetitle"><strong>WELCOME TO K-FAIR</strong><br><small>(케이페어에 오신 것을 환영합니다!)</small></p>
+        </div>
+        <div id="nav">
+            <div class="table">
+            <ul>
+                <li><a href="index.html">HOMEPAGE</a></li>
+                <li><a href="proscons.html">PROS & CONS</a></li>
+                <li><a href="popular.html">WELL-KNOWN GROUPS</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="list.html">LIST</a></li>
+                <li><a href="author.html">AUTHOR</a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="arrow">
+            <a href="#pagetitle"><img src="https://media0.giphy.com/media/efaglgd7HZ3eYUCYCH/giphy.gif?cid=6c09b9523c64de31d722acb25d9937e794a3dd90818daff6&rid=giphy.gif&ct=s" alt="up arrow"
+                style="height: 80px;"></a>
+                <p id="p1">click to return to the top!</p>
+        </div>
+        <div id="main">
+            <div id="timeline">
+                <img src="https://thumbs.gfycat.com/BitesizedDapperAmericanratsnake-size_restricted.gif" alt="pixel moon"
+                style="float:right; height:120px; padding-top:20px;">
+                <h1>TIMELINE</h1>
+                <h4>(Table of Contents)</h4>
+                <h3><a href="#1950s">1950s</a></h3>
+                <h3><a href="#1970s">1970s</a></h3>
+                <h3><a href="#1990s">1990s</a></h3>
+                <h3><a href="#1stgen">1st Generation ('90s-'00s)</a></h3>
+                <h3><a href="#2ndgen">2nd Generation ('00s-'10s)</a></h3>
+                <h3><a href="#3rdgen">3rd Generation ('10s-'20s)</a></h3>
+                <h3><a href="#4thgen">4th Generation ('20s-Present)</a></h3>
+                <h3><a href="#extra">Extra Resources</a></h3>
+                <h3><a href="#credits">Credits</a></h3>
+                <img src="https://25.media.tumblr.com/6144f681678ce0299ba24c8d63d2d4f1/tumblr_mmb205xAnw1ryat6io4_500.gif" alt="pink clouds"
+                style="height:180px; width:340px; padding-left: 7px; padding-top:7px; border-radius:20px; object-fit:cover; object-position:0px -5px;">
+            </div>
+            <div id="information">
+                <h1>HISTORY</h1>
+                <h2>When did Kpop idols start to rise to fame?</h2>
+                <p>Many people say that Kpop started to truly rise to fame when BTS performed in the AMAs back in 2017, which shook the U.S. music industry. Although, Kpop was already a thing waaay back in the 1950s, it just wasn't as popular in foreign countries yet. Kpop really started to appear globally when the group "Girls' Generation (SNSD)"" was formed.</p>
+
+                <h2 id="1950s">1950s</h2>
+                <p>Kpop may seem like a recent emerge but it was actually formed way back in the 1950s. One of the groups that was able to make a name in the U.S. was "The Kim Sisters," even though they weren't able to speak any form of english. It may come as a surprise, but they started their singing career back when they were still little girls, performing for American Gls during the Korean war in 1950 to 1953, from then on, they were on a path into making a name for themselves.
+                    They are the first Kpop group to achieve success in the U.S. and were also the first South Korean sings who were able to make an appearance on the Billboard charts.
+                    The success they gained in the U.S. was due to their soulful renditions of American pop songs, yes they don't know English, so they performed these songs completely phonetically. They are the first stepping-stone of the Kpop industry and paved the way for the many Kpop idols that were yet to come.
+                </p>
+                <p>Unlike today's usual Kpop groups which only consisted of dancing and singing in their performances, The Kim Sisters shared their music through instruments and singing, them being able to play more than 20 different musical instruments.</p>
+                <img src="https://i.scdn.co/image/ab67616d0000b27340f8825dc8b624fd2181f653" alt="The Kim Sisters"
+                style="padding-left: 15px; height: 500px;">
+                <img src="https://e.snmc.io/i/1200/s/0d80360bc0d159b77b4d1ac4884c3b3e/4398791" alt="The Kim Sisters"
+                style="padding-left: 15px; height: 500px;">
+                
+                <h2 id="1970s">1970s</h2>
+                <p>Throughout the years of Kpop, activism and political topics was and still is an important throughline in Kpop. If you didn't know, just recently the popular boy group "BTS" decided to speak out during the rise of Anti-Asian hatecrimes that was commonly occuring in the U.S.
+                    Some artists write lyrics directly addressing these kinds of topics, if not direct, then they use symbolism to still spread awareness and to spread their message across. One of these people is the folk-rock singer and composer "Kim Min-Ki." During the 1970s, he wrote the still-popular song
+                    "Morning Dew," which soon became the anthem of the youth pro-democracy movement during a time of political strife.
+                </p>
+                <p>His efforts was greatly appreciated because of this, but unfortunately, his albums were soon banned during that time. Many people appreciated how he used his music as activitism, and many still look up to him to this day.</p>
+                <img src="https://allaroundthisworld.client.beingtree.com/wp-content/uploads/2019/05/qaljcvchlww.jpg" alt="Kim Min-Ki"
+                style="padding-left: 15px; height: 403px;">
+                <iframe width="591" height="403" src="https://www.youtube.com/embed/Ujt3seEb6BM" title="Morning Dew [Subtitles]" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2 id="1990s">1990s</h2>
+                <p>During the 1990s was the period where the first band, that resembles the K-pop culture and fandom culture we experience today, was formed. This band is called the "Seo Taiji and Boys," they were able to revolutionize Kpop music through combining it with popular American music. They decided to even add hiphop choreography with their new-found genre, which is when Kpop was truly born.
+                    They were the first ever Kpop group. They are also one of many Kpop singers who wrote lyrics about social issues, specificially social issues in South Korea.
+                </p>
+                <p>When their Kpop group was formed, that was when modern Kpop was born.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Seo_Taiji_and_Boys.png" alt="Seo Taiji and Boys"
+                style="padding-left: 15px; height: 450px;">
+                <h2 id="1stgen">1st Generation ('90s-'00s)</h2>
+                <p>The first generation, the generation where the almost-perfect recipe for Kpop stardom was created. Considered to be the first TRUE Kpop idol group was "H.O.T.," since they actually consisted of professionally trained idols.
+                    Their debut song was called "Candy," which was soon to be a bubblegum pop hit in South Korea. Other than H.O.T., other girl groups like S.E.S. debuted in 1997, Fin. K.L. in 1998, and a boy group as well who are called "Sechs Kies," debuting in 1997 along side S.E.S.
+                </p>
+                <p>
+                    These first-gen Kpop idols are considered "revolutionary" due to the fact that laid out the foundations for future Kpop stars to come. They perfectly combined R&B alongside rap and storytelling elements, giving birth to a whole new type of music, a whole new genre. Other than the music part of Kpop,
+                    these idols also were the first to create concepts, styles, themes, and these creative music videos that lead more and more people into getting into Kpop everyday. During this generation as well, this was when, what is to be considered, the "Big 3" Kpop entertainment companies were formed, specifically; JYP, YG, and SM Entertainment. These companies still stand to this day,
+                    more and more idols signing up to these companies which only makes the Kpop industry grow stronger.
+                </p>
+                <img src="https://0.soompi.io/wp-content/uploads/2018/02/10145730/h.o.t2.jpg?s=900x600&e=t" alt="H.O.T."
+                style="padding-left: 15px; height: 403px;">
+                <img src="https://www.hellokpop.com/wp-content/uploads/2015/08/20150902_SHOO_1.jpg" alt="S.E.S."
+                style="padding-left: 15px; height: 403px;">
+                <h2 id="2ndgen">2nd Generation ('00s-'10s)</h2>
+                <p>Another iconic Kpop group debuted in this generation, specifically "G.O.D.," which stands for "Groove Over Dose." They debuted in 1999 and lead the second generation of Kpop. They were one of the most popular boy groups in South Korea, achieving great success during their debut years already. Alongside G.O.D., other groups like BIGBANG, Super Junior, SHINee, and popular duo TVXQ.</p>
+                <img src="https://www.generasia.com/w/images/thumb/f/f0/god.jpg/350px-god.jpg" alt="G.O.D."
+                style="padding-left: 15px; height: 350px;">
+                <img src="https://www.billboard.com/wp-content/uploads/media/SHINee-portrait-2008-billboard-1548.jpg" alt="SHINee"
+                style="padding-left: 15px; height: 350px;">
+                <h2 id="3rdgen">3rd Generation ('10s-'20s)</h2>
+                <p>Here comes the 3rd generation, the generation where Kpop really took off worldwide. This was the era where BTS, Blackpink, Twice and so many more! South Korean music was able to break the U.S. music industry's barriers, getting rid of their mainly white-centric monoculture of music. But Kpop has not only broken the U.S. music industry but also almost every country in the whole world! U.S. doesn't even have the biggest Kpop fanbase actually!
+                    Based on research conducted about which countries have the most tweets about Kpop by <i>Koreaboo.com</i> in 2022, Indonesia was at number one! Following Indonesia were Japan, Philippines, South Korea, and then United States, even South Korea was surprisingly not at the top.
+                </p>
+                <p>What really made Kpop blow up during this generation were the sudden surge of groups debuting, the unique concepts, the lyrics, the addictive melodies and beats. As time went on, Kpop music just seemed to improve more and more everyday, causing more people to be converted into Kpop stans. It's not even just the music, but also the concepts, the themes, the messages, the choreography. Kpop is unique in many, many ways, being the only kind of music genre
+                    to have an actual "recipe" or requirements into making a successful artist.
+                </p>
+                <p>These requirements into becoming a Kpop idol is NO JOKE, most idols start young. During the ages 12-17, mostly their teen years, are when idols usually sign up for companies to train. Some even join as young as 7 or 8 years old, although it may sound fun and all, it is really hard to obtain a good and healthy lifestyle while balancing out your school, trainee, and personal life.
+                    This is why idols seems so professional, seem so talented, seem so smart, it's because they have been trained and also have honed their special talents, so that is why they became a Kpop idol, because without their unique abilities or skills, then why would THEY debut instead of the other hundreds of trainees trying to become an idol themselves.
+                </p>
+                <p>Anyways, enough with the hard truth of the Kpop industry, here are Kpop groups you have HAD TO have heard of at least once.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_02.jpg" alt="Twice"
+                style="padding-left: 15px; height: 255px;">
+                <img src="https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/canvas/2021/07/08/62d30fc0-81a2-4093-b5aa-182a94855233_386389bf.jpg?itok=394kwgGN&v=1625719813" alt="BTS"
+                style="padding-left: 15px; height: 255px;">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebc9690bc711d04b3d4fd4b87c" alt="Blackpink"
+                style="padding-left: 15px; height: 255px;">
+                <img src="https://static.wikia.nocookie.net/thelostplanet/images/1/14/EXO_%28Obsession%29_1.png/revision/latest?cb=20191127072529" alt="Exo"
+                style="padding-left: 15px; height: 255px;">
+                <h2 id="4thgen">4th Generation ('20s-Present)</h2>
+                <p>Here we are with the 4th generation, our present and recently debuted groups of our generation. As previously mentioned, as time goes on, Kpop changes. Kpop nowadays have concepts that closely relate to <i>Gen Z</i> and as well as millenials of course. As the Kpop industry grows, the lyrics change accustomed to the ongoing trends. Recently, many songs came out addressing social issues, political issues, environment issues, and so on, Kpop artists still spreading awareness to present issues of this time.</p>
+                <p>Some of the uprising Kpop groups who are going to soon, dominate the Kpop industry!</p>
+                <img src="https://lastfm.freetls.fastly.net/i/u/ar0/3611ca1cd121b29a5c387a5964dfcc66" alt="Stray Kids"
+                style="padding-left: 15px; height: 260px;">
+                <img src="https://kpopping.com/documents/54/5/220531-M2MPD-Twitter-Update-TXT-Film-Shots-documents-2.jpeg?v=f3faa" alt="TXT"
+                style="padding-left: 15px; height: 260px;">
+                <img src="https://image.kpopmap.com/2019/02/GIDLE-I-burn-Member-profile.jpg" alt="(G)I-dle"
+                style="padding-left: 15px; height: 260px;">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebaa28abbc6d04ccd22c8ae3b5" alt="ITZY"
+                style="padding-left: 15px; height: 260px;">
+                <h2 id="extra">Extra Resources</h2>
+                <p>Here are some extra videos you can watch to learn more about the history of Kpop!</p>
+                <iframe width="716" height="403" src="https://www.youtube.com/embed/kPS4tCHT6SA" title="KPOP HISTORY in 20mins | From SeoTaiji to BTS" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left: 15px;"></iframe>
+                <iframe width="716" height="403" src="https://www.youtube.com/embed/HerU6Gzn_O4" title="The Birth Of K-Pop" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left: 15px;"></iframe>
+                <iframe width="716" height="403" src="https://www.youtube.com/embed/gpgLrkhpOlI" title="evolution of the 4 generations of KPOP (1990s - June 2022)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left: 15px;"></iframe>
+                <h2 id="credits">Credits</h2>
+                <p>Credit to these websites for helping me obtain this information! <br>
+                    <a href="https://www.lafilm.edu/blog/a-brief-history-of-kpop/">"Brief History of Kpop" - LA Film</a><br>
+                    <a href="https://www.masterclass.com/articles/what-is-kpop">"All About K-Pop" - Masterclass</a><br>
+                    <a href="https://www.teenvogue.com/story/brief-history-of-k-pop">"A Brief History of Kpop" - Teen Vogue</a> 
+                </p>
+                <p>Thank you for briefly reading about basic Kpop history and its origins!
+                    <br><br><br>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

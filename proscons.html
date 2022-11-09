@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+        <title>K-FAIR</title>
+        <style>
+            
+            body {
+                width: 1920px;
+                background-color:  rgb(254, 249, 239);
+
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                margin: 20px;
+                font-size: 40px;
+            }
+            h2 {
+                color:rgb(128, 50, 50);
+                margin: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+            }
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                margin: 20px;
+            }
+            h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                margin: 20px;
+            }
+            h5 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 25px;
+                margin: 20px;
+            }
+            p {
+                font-family: 'Montserrat', sans-serif;
+                margin: 20px;
+                font-size: 20px;
+            }
+
+            #p1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8px;    
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                border-radius: 20px;
+            }
+
+            ul li {
+                display: inline;
+                float: left;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+            }
+            .table {
+                display: table;
+                margin: 0 auto;
+            }
+
+            .vl {
+                border-right: 10px solid rgb(64, 64, 64);
+                border-radius: 20px;
+                height: 740px;
+                float: right;
+            }
+
+            ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                padding-left: 96px;
+                padding-right: 96px;
+                text-decoration: none;
+                transition-duration: .4s;
+            }
+
+            h1 a {
+            color:rgb(28, 22, 38);
+            transition-duration: .4s;
+            }
+
+            h3 a {
+                color:#39081d;
+                transition-duration: .4s;
+            }
+            h5 a{
+                color:rgb(128, 50, 50);
+                transition-duration: .4s;
+            }
+
+            h1 a:hover {
+                color: rgb(223, 100, 100);
+            }
+            
+            h3 a:hover {
+                color:#91297c;
+            }
+            h5 a:hover{
+                color:#91297c; 
+            }
+
+            ul li a:hover {
+                background-color: rgb(223, 100, 100);
+            }
+
+            .zoom {
+                padding-left:15px;
+                height: auto;
+            }
+
+            .zoom img {
+            transition: transform .5s ease;
+            }
+
+            .zoom:hover img {
+            transform: scale(1.1);
+            }
+
+            #header {
+                background-color: #9cadce;
+                height: 200px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 20px;
+                box-shadow: 2px 2px 5px 1px rgba(75, 47, 47, 0.8);
+                width: 1910px;
+            }
+            #pagetitle {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 32pt;
+                color: rgb(64, 64, 64);
+                text-align: center;
+                padding: 60px;
+            }
+            
+            #main {
+                height: 1800px;
+                width: 1728px;
+                margin: 0 auto;
+                padding-top: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #nav {
+                text-align:center;
+                padding: 10px;
+            }
+
+            #information1 {
+                width: 48%;
+                height: 98%;
+                float: left;
+                background-color: rgb(211, 134, 202);
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+            }
+            #information2 {
+                width: 48%;
+                height: 98%;
+                float: right;
+                background-color: rgb(189, 125, 203);
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+            }
+
+            #navigation {
+                float: left;
+                width: 20%;
+                height: 3.7%;
+                background-color: #b54949;
+                border-radius: 20px;
+            }
+
+            #arrow {
+                float: right;
+                width: 80px;
+                border-radius: 20px;
+                position: fixed;
+            }
+
+            .dark {
+                color:#145222;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="http://i.imgur.com/B5YgXbH.gif" alt="heart dance" 
+   style="float:right; padding-top: 70px; width: 130px; height: 130px;"> 
+         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e4a8b98a-5148-4238-80c6-91a0c883ce9d/d9g5kll-e14f2718-3aa0-4774-9ec0-a5060768d488.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U0YThiOThhLTUxNDgtNDIzOC04MGM2LTkxYTBjODgzY2U5ZFwvZDlnNWtsbC1lMTRmMjcxOC0zYWEwLTQ3NzQtOWVjMC1hNTA2MDc2OGQ0ODguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RXThpP5Miv28Epw6yI7rb1QUIlXNx0bngQRtvRZsWxw" alt="pink sparkly planet with heart revolving" 
+   style="float:left; padding: 1px; width: 130px; height: 130px;"> 
+        <div id="header">
+            <p id="pagetitle"><strong>WELCOME TO K-FAIR</strong><br><small>(케이페어에 오신 것을 환영합니다!)</small></p>
+        </div>
+        <div id="nav">
+            <div class="table">
+            <ul>
+                <li><a href="index.html">HOMEPAGE</a></li>
+                <li><a href="proscons.html">PROS & CONS</a></li>
+                <li><a href="popular.html">WELL-KNOWN GROUPS</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="list.html">LIST</a></li>
+                <li><a href="author.html">AUTHOR</a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="arrow">
+            <a href="#pagetitle"><img src="https://media0.giphy.com/media/efaglgd7HZ3eYUCYCH/giphy.gif?cid=6c09b9523c64de31d722acb25d9937e794a3dd90818daff6&rid=giphy.gif&ct=s" alt="up arrow"
+                style="height: 80px;"></a>
+                <p id="p1">click to return to the top!</p>
+        </div>
+        <div id="main">
+            <div id="information1">
+                <h1>PROS</h1>
+                <h2>IMPROVES MOOD AND PRODUCTIVITY</h2>
+                <p>Just like other genres of music, listening to Kpop can improve your mood. Although almost all music genres can have the same affect, Kpop has a certain beat or melody to it that makes it a better "background noise" for things like studying. Studies show that music can help someone be more productive and will allow them to better focus on the task at hand.</p>
+                <h2>SPARKS CREATIVITY</h2>
+                <p>Did you know that most artists love listening to music while working? That is due to the fact that music can help spark creativity and let those creative juices flow. As an artist myself, Kpop has brought me far into my art journey. The usual beat and melody of Kpop just makes me feel so creative and also helps me in grasping ideas for my next work. </p>
+                <h2>GETTING CONSISTENT AND HIGH-QUALITY MUSIC/CONTENT</h2>
+                <p>In comparison to usual American artists, Kpop idols release music at least once or twice a year. And since the Kpop industry is growing and is more than just music, the companies always make sure that their idols have fresh tracks and fresh content for the fans to enjoy. Songs are usually very good and high quality, as well as the production value on the music videos, since again, Kpop isn't just music but also entertainment, dance, funny idols, gameshows, reality shows, etc.</p>
+                <h2>MAKING FRIENDS</h2>
+                <p>Not everyone in the Kpop community are friendly or active, but most Kpop fans are actually active! It is easy to interact and make friends with other Kpop listeners through social media or even in-person during things like school, concerts, etc. A big portion of the Kpop community serves as a safe space for many, and it is a nice place to share your own fan-made content or to also just share your opinoins on your favorite idols.</p>
+                <h2>MERCH!!</h2>
+                <p>What better way to support your favorite Kpop idols than to buy their merch?! Especailly since the Kpop industry is so big and growing, following the latest trends as well. There are so many different types of pretty and aesthetic merch that your Kpop idols may be selling. For instance, albums, hoodies, plushies, and photocards. Buying merch pretty much its two birds with one stone since, first off, you're supporting your favorite idols, and second, you're getting pretty things that can actually be useful to you or can serve as nice decoration to spice up your room.</p>
+                <h2>FUN EVENTS</h2>
+                <p>You'd think concerts are the only type of Kpop events that idols offer?! Of course not! There are many things like meet n greets, contests, participating in gameshows, where you can interact and meet your favorite Kpop idols! Idols often host raffles for meet n greets or for concert tickets, that everyone in the Kpop community can join in! This promotes interaction between idols and fans, which makes being a Kpop stan even more exciting and fun!</p>
+                <h2>LEARNING A LANGUAGE/CULTURAL AWARENESS</h2>
+                <P>You may not notice it, but as you listen to more Kpop, watch more variety shows, and so on, you are actually learning a language! Even if you only know a few phrases, that is still learning a language! Surrounding yourself with Kpop lets you observe their culture and customs, their language, their mannerisms, and so much more! You are basically surrounding yourself with a different culture subconsciously and learning their language, what is cooler than that! Kpop might even actually motivate you to formally learn the language so that you can fully understand your favorite Kpop idols better.</P>
+            </div>
+            <div id="information2">
+                <h1>CONS</h1>
+                <h2>MAY DISTRACT YOU</h2>
+                <p>Even though it is stated in the pros that Kpop may aid in helping you focus, it truly depends on the person. Studies show that instrumental music is more affective when wanting to really focus on studying, that is due to the fact that instrumental music only contains melodies and doesn't contain lyrics that may distract the listener, in comparison to Kpop which is full of lyrics and unnecessary noise to the listener.</p>
+                <h2>FAN WARS/TOXICITY</h2>
+                <p>Not all members of the Kpop community are friendly, especially those of younger ages who aren't all too mature. On social media, especially Twitter, fan wars take place. What is a fan war? A fan war is when two fandoms fight against eachother for, sometimes, no particular reason. They may be arguing over which group is better, which is the best, and so on. Fan wars are really toxic and may affect your mental health if you decide to participate in one, so it is best to avoid them at all costs.</p>
+                <h2>MONEY MONEY MONEY</h2>
+                <p>Even though buying merch may be signs of a plus, this may drain your cash funds! Sure, it is good to support your group through buying their merchandise, but the more you buy, the more you might get addicted. This may lead to wasting of money that could be used for more necessary or practical things.</p>
+                <h2>GETTING TOO INTO IT</h2>
+                <p>For some, it may turn out to be draining or tiring to your mental health if you keep acitvely supporting groups or idols that don't even know that you exist. Again, it depends on the person, but if someone really gets into Kpop, they might get sucked in too far and the obsession may grow worse to the point where it damages their mental health.</p>
+                <h2>PERSONAL LIFE</h2>
+                <p>Connecting to the last point, you might get too sucked into the Kpop hole, meaning you start to lose your sense of self or individuality. You might invest all your time into your favorite idols, to the point where you won't have time for other things going on in your life anymore! You might miss important events, procrastinate on school works, lose friends, etc. It is important to weigh out and balance all the things going on in your life to prevent this from happening.</p>
+            </div>
+            <h1 id="credits">Credits</h1>
+            <P>Credits to these websites for helping me gather information and conduct proper research, using trustworthy and reliable resources! <br>
+                <a href="https://www.kpopstarz.com/articles/293998/20200721/the-pros-and-cons-of-k-pop-music-while-studying.htm">kpopstarz.com</a> <br>
+                <a href="https://www.quora.com/What-are-the-pros-and-cons-of-the-K-pop-culture">quora.com</a> <br>
+                <a href="https://www.koreaboo.com/lists/listening-kpop-actually-makes-smarter/">koreaboo.com</a> <br>
+                <a href="https://www.fusfoo.com/article/5056/Getting-into-K-Pop-The-Pros-and-Cons.html">fusfoo.com</a> <br>
+            </P>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+        <title>K-FAIR</title>
+        <style>
+            
+            body {
+                width: 1920px;
+                background-color:  rgb(254, 249, 239);
+
+            }
+            h1, h2 {
+                font-family: 'Courier New', Courier, monospace;
+                margin: 20px;
+            }
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+            }
+            p {
+                font-family: 'Montserrat', sans-serif;
+                margin: 20px;
+                font-size: 20px;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                border-radius: 20px;
+            }
+
+            ul li {
+                display: inline;
+                float: left;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+            }
+            .table {
+                display: table;
+                margin: 0 auto;
+            }
+
+            .vl {
+                border-right: 10px solid rgb(64, 64, 64);
+                border-radius: 20px;
+                height: 740px;
+                float: right;
+            }
+
+            ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                padding-left: 96px;
+                padding-right: 96px;
+                text-decoration: none;
+                transition-duration: .4s;
+            }
+
+            h1 a {
+            color:rgb(28, 22, 38);
+            transition-duration: .4s;
+            }
+
+            h3 a {
+                color:#1b4d55;
+                transition-duration: .4s;
+            }
+
+            h1 a:hover {
+                color: rgb(223, 100, 100);
+            }
+            
+            h3 a:hover {
+                color:#50929c;
+            }
+
+            ul li a:hover {
+                background-color: rgb(223, 100, 100);
+            }
+
+            .zoom {
+                height: auto;
+            }
+
+            .zoom img {
+            transition: transform .5s ease;
+            }
+
+            .zoom:hover img {
+            transform: scale(1.2);
+            }
+
+            #header {
+                background-color: #9cadce;
+                height: 200px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 20px;
+                box-shadow: 2px 2px 5px 1px rgba(75, 47, 47, 0.8);
+                width: 1910px;
+            }
+            #pagetitle {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 32pt;
+                color: rgb(64, 64, 64);
+                text-align: center;
+                padding: 60px;
+            }
+            
+            #main {
+                height: 1100px;
+                width: 1728px;
+                margin: 0 auto;
+                padding-top: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #why1 {
+                width: 29%;
+                height: 65%;
+                float: right;
+                background-color: #d4afb9;
+                border-radius: 40px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+
+
+            }
+            #history1 {
+                width: 29%;
+                height: 65%;
+                float: right;
+                background-color: #7ec4cf;
+                border-radius: 40px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+
+            }
+            #list1 {
+                width: 12.79%;
+                height: 65%;
+                float: right;
+                background-color: #d1cef2;
+                border-radius: 40px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+            }
+
+            #author1 {
+                width: 59.5%;
+                height: 31%;
+                float: right;
+                background-color: rgb(255, 208, 208);
+                border-radius: 40px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+            }
+            #popular1 {
+                width: 37%;
+                height: 31%;
+                float: left;
+                background-color: #accbe2;
+                border-radius: 40px;
+                border-style: solid;
+                border-width: 15px;
+                border-left-width: 15px;
+                border-right-width: 15px;
+                border-color: rgb(254, 249, 239);
+            }
+            #nav {
+                text-align:center;
+                padding: 10px;
+            }
+
+            #quickaccess {
+                float: left;
+                width: 20%;
+                height: 50%
+            }
+            
+            #ty {
+                width: 100%;
+                height: auto;
+                background-color: #9cadce;
+                border-radius: 40px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <img src="http://i.imgur.com/B5YgXbH.gif" alt="heart dance" 
+   style="float:right; padding-top: 70px; width: 130px; height: 130px;"> 
+         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e4a8b98a-5148-4238-80c6-91a0c883ce9d/d9g5kll-e14f2718-3aa0-4774-9ec0-a5060768d488.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U0YThiOThhLTUxNDgtNDIzOC04MGM2LTkxYTBjODgzY2U5ZFwvZDlnNWtsbC1lMTRmMjcxOC0zYWEwLTQ3NzQtOWVjMC1hNTA2MDc2OGQ0ODguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RXThpP5Miv28Epw6yI7rb1QUIlXNx0bngQRtvRZsWxw" alt="pink sparkly planet with heart revolving" 
+   style="float:left; padding: 1px; width: 130px; height: 130px;"> 
+        <div id="header">
+            <p id="pagetitle"><strong>WELCOME TO K-FAIR</strong><br><small>(케이페어에 오신 것을 환영합니다!)</small></p>
+        </div>
+        <div id="nav">
+            <div class="table">
+            <ul>
+                <li><a href="index.html">HOMEPAGE</a></li>
+                <li><a href="proscons.html">PROS & CONS</a></li>
+                <li><a href="popular.html">WELL-KNOWN GROUPS</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="list.html">LIST</a></li>
+                <li><a href="author.html">AUTHOR</a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="quickaccess">
+                <div class="vl"></div>
+                <h1>LATEST HITS</h1>
+                <p>Here you can find the latest music videos!</p>
+                <h3><a href="https://www.youtube.com/watch?v=fCO7f0SmrDc">(G)-Idle - 'Nxde' Official Music Video</a></h3>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=fCO7f0SmrDc">
+                <img src="https://i.ytimg.com/vi/fCO7f0SmrDc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBe74VtWRmQCA5cGW0HZkyTh-hPoA" alt="nxde thumbnail"
+                style="width: auto; height: auto;"></a>
+                </div>
+                <h3><a href="https://www.youtube.com/watch?v=pyf8cbqyfPs">LE SSERAFIM (르세라핌) 'ANTIFRAGILE' OFFICIAL M/V</a></h3>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=pyf8cbqyfPs">
+                <img src="https://i.ytimg.com/vi/pyf8cbqyfPs/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCY_ahXwGYUjvt8XPw9KRhy_KUbFw" alt="anti-fragile thumbnail"
+                style="width: auto; height: auto;"></a>
+                </div>
+                <h3><a href="https://www.youtube.com/watch?v=6uZy86ePgO0">ITZY “Boys Like You” M/V @ITZY</a></h3>
+                <div class="zoom">
+                <a href="https://www.youtube.com/watch?v=6uZy86ePgO0">
+                <img src="https://i.ytimg.com/vi/6uZy86ePgO0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDLylweK0LluehgMDnQ__-mzn_jUg" alt="boys like you thumbnail"
+                style="width: auto; height: auto;"></a>
+                </div>
+            </div>
+            <div id="list1">
+                <h1><a href="list.html">LIST</a></h1>
+                <p>Here you can find a complete list of every single K-POP idol that has ever debuted, from 1st to 4th gen.</p>
+                <p>Special thanks to the website of Hallyu Idol for providing this easy-access list!</p>
+                <img src="https://64.media.tumblr.com/da3da8768a3b6dbc9c7c706ac8a2ec7e/7fa46c3405aa8f59-df/s400x600/752a74276cbbbfffc8f4845ec09c2934315e7250.gif" alt="NAYEON" 
+                style="float:right; padding-right: 10px; padding-top: 48%; width: 210px; height: 200px; object-fit: scale-down;"> 
+            </div>
+            <div id="history1">
+                <h1><a href="history.html">HISTORY</a></h1>
+                <p>Here you will be able to find the timeline of certain Kpop events and important happenings. Things like the rise of certain groups, the fall of certain groups, where and when important events took place, record-breaking accomplishments, first-time awards that were given, and so on.</p>
+                <p>Having this knowledge will allow one to fully appreciate how far Kpop has grown and how it is still growing. The future of Kpop has a long way to go with the new concepts, new groups, and new events that are coming out each day. Kpop can only grow from here, since it has already gave a big impact on the world.</p>
+                <p>I hope that you'll be learning a bit from this and find out things that you haven't even thought could be possible! And hopefully it doesn't seem like a boring History lesson.</p>
+            </div>
+            <div id="why1">
+                <h1><a href="proscons.html">WHY? (PROS & CONS)</a></h1>
+                <p>First of all, welcome to the K-Fair (케이페어에) website! Here you will be able to find all things KPOP! This website aims to get YOU into kpop, AKA for you to become a kpop-stan as well. </p>
+                <p>Here, you will find the pros and cons (mostly pros!) of listening to Korean Pop music! All reasonings will be totally unbiased and research was done for this to be the most accurate kpop-information site made! Sources will be linked so you can have more in-depth information on the topics that will be discussed in this website. This website was created just for fun so don't expect too much from it! </p>
+                <img src="https://i.pinimg.com/originals/bd/c3/67/bdc367994ad2cfd33d79122959ee6dd3.gif" alt="molang thinking"
+                style="float:left; width: 200px; height: 200px;">
+            </div>
+            <div id="author1">
+                <h1><a href="author.html">AUTHOR</a></h1>
+                <p>Get to know the Author's semi-personal life alongside their personal favorites, opinions, social medias, and more here!</p>
+                <p>The content on this page may contain the author's favorite groups, favorite songs, playlist recommendations, and even online shop recommendations on where's the best place to purchase albums!</p>
+            </div>
+            <div id="popular1">
+                <h1><a href="popular.html">WELL-KNOWN GROUPS</a></h1>
+                <p>Here are the popular groups whose songs you may have listened to, but didn't know they were actually kpop idols! These popular 1st-4th gen groups carried kpop throughout the years and have changed how kpop is portrayed and how the world sees kpop.</p>
+                <img src="https://i.pinimg.com/originals/82/af/01/82af016a4f42cc0b99c8ef3992be80f8.gif" alt="bear dancing"
+                style="float: right; width: 130px; height: 130px;">
+            </div>
+        </div>
+        <div id="ty">
+            <p>Thank you for visiting my website that I put many hours into creating! Follow me on my social/s if you wanna support me or show appreciation to my (oh-so-amazing) website!! :D<br>ig: @jqeduh</p>
+        </div>
+    </body>
+</html>
